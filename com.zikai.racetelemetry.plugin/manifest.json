@@ -1,11 +1,11 @@
 {
   "name": "Race Telemetry",
   "uuid": "com.zikai.racetelemetry",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "author": "Zikai",
   "entry": "backend/plugin.cjs",
   "description": "Gear, RPM and symmetric shift lights for Forza and EA SPORTS F1 25.",
-  "repo": "",
+  "repo": "https://github.com/wzk112/flexbar-race-telemetry",
   "sdk": {
     "version": "1.0.7"
   },
