@@ -1,0 +1,112 @@
+{
+  "name": "Race Telemetry",
+  "uuid": "com.zikai.racetelemetry",
+  "version": "0.2.4",
+  "author": "Zikai",
+  "entry": "backend/plugin.cjs",
+  "description": "Gear, RPM and symmetric shift lights for Forza and EA SPORTS F1 25.",
+  "repo": "",
+  "sdk": {
+    "version": "1.0.7"
+  },
+  "software": {
+    "minimumVersion": "2.0.6"
+  },
+  "os": [
+    {
+      "platform": "windows",
+      "minimumVersion": "10"
+    },
+    {
+      "platform": "mac",
+      "minimumVersion": "10.15"
+    }
+  ],
+  "device": [
+    {
+      "name": "flexbar",
+      "version": "1.0.0"
+    }
+  ],
+  "configPage": "",
+  "shortcuts": [],
+  "keyLibrary": {
+    "title": "$PluginName",
+    "style": {
+      "icon": "mdi mdi-steering"
+    },
+    "children": [
+      {
+        "title": "$Dashboard.Title",
+        "tip": "$Dashboard.Tip",
+        "cid": "com.zikai.racetelemetry.dashboard",
+        "config": {
+          "keyType": "directDraw",
+          "platform": [
+            "windows",
+            "mac"
+          ]
+        },
+        "style": {
+          "icon": "mdi mdi-car-speed-limiter",
+          "width": 240
+        },
+        "data": {
+          "source": "forza-horizon",
+          "udpPort": 9999,
+          "renderFps": 30,
+          "lightsStartRatio": 0.65,
+          "redlineRatio": 0.9,
+          "flashRatio": 0.94,
+          "telemetryTimeoutMs": 1200,
+          "rotate180": false,
+          "displayMode": "gear-rpm"
+        }
+      }
+    ]
+  },
+  "local": {
+    "en": {
+      "PluginName": "Race Telemetry",
+      "Dashboard": {
+        "Title": "Race Dashboard",
+        "Tip": "Gear, RPM and shift lights",
+        "UI": {
+          "Source": "Telemetry source",
+          "SourceForzaHorizon": "Forza Horizon 4 / 5 / 6",
+          "SourceForzaMotorsport": "Forza Motorsport",
+          "SourceF125": "EA SPORTS F1 25 / 2026 Season Pack",
+          "UdpPort": "UDP port",
+          "DisplayMode": "Center display",
+          "DisplayModeTip": "You can also tap the center of Flexbar to cycle modes.",
+          "ModeGearRpm": "Gear + RPM",
+          "ModeGear": "Gear only",
+          "ModeRpm": "RPM only",
+          "Rotate180": "Rotate display 180°",
+          "Rotate180Tip": "Turn this on when the dashboard appears upside down on Flexbar."
+        }
+      }
+    },
+    "zh-CN": {
+      "PluginName": "赛车遥测",
+      "Dashboard": {
+        "Title": "赛车仪表",
+        "Tip": "显示挡位、转速和换挡灯",
+        "UI": {
+          "Source": "遥测来源",
+          "SourceForzaHorizon": "极限竞速：地平线 4 / 5 / 6",
+          "SourceForzaMotorsport": "极限竞速 Motorsport",
+          "SourceF125": "EA SPORTS F1 25 / 2026 赛季包",
+          "UdpPort": "UDP 端口",
+          "DisplayMode": "中间显示模式",
+          "DisplayModeTip": "也可点击 Flexbar 中间区域循环切换。",
+          "ModeGearRpm": "挡位＋转速",
+          "ModeGear": "仅挡位",
+          "ModeRpm": "仅转速",
+          "Rotate180": "画面旋转 180°",
+          "Rotate180Tip": "Flexbar 上的仪表倒置时打开此开关。"
+        }
+      }
+    }
+  }
+}
