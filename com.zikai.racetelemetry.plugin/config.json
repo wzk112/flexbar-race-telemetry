@@ -1,0 +1,23 @@
+{
+  "source": "forza-horizon",
+  "udpHost": "0.0.0.0",
+  "udpPort": 9999,
+  "renderFps": 30,
+  "lightsStartRatio": 0.65,
+  "redlineRatio": 0.9,
+  "flashRatio": 0.94,
+  "telemetryTimeoutMs": 1200,
+  "diffUpdate": false,
+  "rotate180": false,
+  "displayMode": "gear-rpm",
+  "colors": {
+    "background": "#020408",
+    "inactive": "#101820",
+    "green": "#22e878",
+    "yellow": "#ffd43b",
+    "red": "#ff304f",
+    "flash": "#a855f7",
+    "text": "#f8fafc",
+    "secondaryText": "#9fb3c8"
+  }
+}
