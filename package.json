@@ -1,9 +1,13 @@
 {
   "name": "flexbar-race-telemetry",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "private": true,
   "license": "MIT",
   "description": "Universal sim-racing telemetry dashboard for Flexbar, with Forza and F1 25 support.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wzk112/flexbar-race-telemetry.git"
+  },
   "type": "commonjs",
   "scripts": {
     "build": "rollup -c",
