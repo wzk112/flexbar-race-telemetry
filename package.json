@@ -1,0 +1,29 @@
+{
+  "name": "flexbar-race-telemetry",
+  "version": "0.2.4",
+  "private": true,
+  "license": "MIT",
+  "description": "Universal sim-racing telemetry dashboard for Flexbar, with Forza and F1 25 support.",
+  "type": "commonjs",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "node --test",
+    "preview": "node scripts/preview.cjs",
+    "plugin:validate": "flexcli plugin validate --path com.zikai.racetelemetry.plugin",
+    "plugin:pack": "flexcli plugin pack --path com.zikai.racetelemetry.plugin"
+  },
+  "engines": {
+    "node": ">=20 <21"
+  },
+  "dependencies": {
+    "@eniac/flexdesigner": "^1.0.5",
+    "@napi-rs/canvas": "^0.1.80"
+  },
+  "devDependencies": {
+    "@eniac/flexcli": "latest",
+    "@rollup/plugin-commonjs": "^28.0.9",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^4.46.2"
+  }
+}
